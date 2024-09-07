@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">Daily Task Manager</h1>
+        <div class="mb-4">
+            <input type="text" id="taskInput" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter a new task">
+        </div>
+        <div class="flex justify-between mb-4">
+            <button id="addTaskBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Add Task</button>
+            <button id="clearAllBtn" class="bg-red-500 text-white px-4 py-2 rounded">Clear All</button>
+        </div>
+        <ul id="taskList" class="list-disc list-inside text-gray-700"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
